@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <title>July 7 — A Bouquet Made Just For You</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Audio Element (Replace 'your-song.mp3' with your actual music file path) -->
+  <audio id="bg-music" src="assets/Ruth B. - Dandelions  Piano Cover with Strings (with Lyrics & PIANO SHEET).mp3" loop></audio>
+
+  <div id="bg-layer">
+    <div class="light-ray r1"></div>
+    <div class="light-ray r2"></div>
+    <div class="light-ray r3"></div>
+    <div class="shooting-star" style="top:10%; left:70%; animation-delay:1s;"></div>
+    <div class="shooting-star" style="top:20%; left:30%; animation-delay:5s;"></div>
+  </div>
+
+  <div id="intro">
+    <div class="intro-glow"></div>
+    <div class="intro-text">
+      <div class="intro-line1">Happy July 7 and Goodluck bukas love</div>
+      <div class="intro-line2">I made these flowers just for you.</div>
+    </div>
+  </div>
+
+  <main id="stage">
+    <div class="eyebrow">Mwuah</div>
+    <h1 class="headline">Flowers for you hehehe</h1>
+
+    <div class="garden">
+      <!-- Frame Top Left -->
+      <div class="frame-slot tl">
+        <label class="photo-frame">
+          <input type="file" accept="image/*" class="photo-input">
+          <img src="assets/e925ae1430bc72230747042137c5e057.gif" alt="" class="uploaded-img">
+          <div class="frame-content">
+            <svg class="frame-icon" viewBox="0 0 24 24" fill="none" stroke="#C9962B" stroke-width="1.4"><rect x="3" y="6" width="18" height="13" rx="2"/><circle cx="12" cy="12.5" r="3.2"/><path d="M8 6l1.5-2h5L16 6"/></svg>
+            <div class="frame-label">Add a memory</div>
+          </div>
+          <div class="frame-sparkle" style="top:20%; left:30%;"></div>
+        </label>
+      </div>
+
+      <!-- Frame Top Right -->
+      <div class="frame-slot tr">
+        <label class="photo-frame">
+          <input type="file" accept="image/*" class="photo-input">
+          <img src="assets/0c649a17ec1e5f5ca340248b4ef4e4be.gif" alt="" class="uploaded-img">
+          <div class="frame-content">
+            <svg class="frame-icon" viewBox="0 0 24 24" fill="none" stroke="#C9962B" stroke-width="1.4"><rect x="3" y="6" width="18" height="13" rx="2"/><circle cx="12" cy="12.5" r="3.2"/><path d="M8 6l1.5-2h5L16 6"/></svg>
+            <div class="frame-label">Add a memory</div>
+          </div>
+          <div class="frame-sparkle" style="top:60%; left:60%;"></div>
+        </label>
+      </div>
+
+      <!-- Bouquet Center Piece -->
+      <div class="bouquet-slot">
+        <div class="bouquet-wrap" id="bouquet-wrap">
+          <svg id="bouquet-svg" viewBox="0 0 600 700">
+            <defs>
+              <radialGradient id="petalGradientOuter" cx="50%" cy="88%" r="95%">
+                <stop offset="0%" stop-color="#FFFBEA"/>
+                <stop offset="35%" stop-color="#FBE58C"/>
+                <stop offset="68%" stop-color="#F3CE4E"/>
+                <stop offset="100%" stop-color="#D9A331"/>
+              </radialGradient>
+              <radialGradient id="petalGradientInner" cx="50%" cy="90%" r="95%">
+                <stop offset="0%" stop-color="#FFFDF2"/>
+                <stop offset="32%" stop-color="#FCEB9E"/>
+                <stop offset="66%" stop-color="#F6D65C"/>
+                <stop offset="100%" stop-color="#DFA835"/>
+              </radialGradient>
+              <linearGradient id="stemGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#4E6B37"/>
+                <stop offset="45%" stop-color="#75935029" />
+                <stop offset="50%" stop-color="#8AAE5C"/>
+                <stop offset="100%" stop-color="#516E38"/>
+              </linearGradient>
+              <linearGradient id="leafGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#93B369"/>
+                <stop offset="55%" stop-color="#729350"/>
+                <stop offset="100%" stop-color="#597b3d"/>
+              </linearGradient>
+              <linearGradient id="ribbonGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#F3D77E"/>
+                <stop offset="50%" stop-color="#DDA83B"/>
+                <stop offset="100%" stop-color="#B9822A"/>
+              </linearGradient>
+              <radialGradient id="bouquetGlow" cx="50%" cy="45%" r="60%">
+                <stop offset="0%" stop-color="#FFEFA8" stop-opacity="0.55"/>
+                <stop offset="100%" stop-color="#FFEFA8" stop-opacity="0"/>
+              </radialGradient>
+              <radialGradient id="groundShadow" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#8a6a2e" stop-opacity="0.28"/>
+                <stop offset="100%" stop-color="#8a6a2e" stop-opacity="0"/>
+              </radialGradient>
+            </defs>
+
+            <ellipse class="glow-pulse-el" cx="300" cy="330" rx="230" ry="230" fill="url(#bouquetGlow)"/>
+            <ellipse cx="300" cy="648" rx="120" ry="16" fill="url(#groundShadow)"/>
+
+            <g class="stems">
+              <path class="stem stem1" d="M300,655 C288,520 275,420 258,330"/>
+              <path class="stem stem2" d="M300,655 C300,520 300,420 300,310"/>
+              <path class="stem stem3" d="M300,655 C312,520 325,420 342,330"/>
+            </g>
+
+            <g class="leaves">
+              <path class="leaf" style="animation-delay:0.9s" d="M290,560 C260,548 228,552 205,588 C202,596 206,602 214,600 C248,596 278,582 292,564 C294,561 293,562 290,560 Z"><title></title></path>
+              <path class="leaf-vein" style="animation-delay:0.9s" d="M287,563 C262,562 232,570 212,592"/>
+              <path class="leaf" style="animation-delay:1.05s" d="M310,540 C348,524 384,530 402,568 C404,576 400,582 392,579 C360,570 328,556 312,544 C310,542 308,542 310,540 Z"/>
+              <path class="leaf-vein" style="animation-delay:1.05s" d="M313,543 C344,538 376,548 396,572"/>
+              <path class="leaf" style="animation-delay:1.2s" d="M298,470 C274,458 248,458 236,482 C234,489 238,494 245,492 C270,487 290,478 300,466 C301,464 299,464 298,470 Z"/>
+              <path class="leaf-vein" style="animation-delay:1.2s" d="M296,468 C276,463 254,466 240,484"/>
+              <path class="leaf" style="animation-delay:1.35s" d="M304,450 C328,436 354,438 366,462 C368,469 364,474 357,472 C334,465 314,454 306,444 C305,442 303,444 304,450 Z"/>
+              <path class="leaf-vein" style="animation-delay:1.35s" d="M306,448 C328,445 350,452 362,466"/>
+            </g>
+
+            <g class="ribbon">
+              <path class="ribbon-tail-l" d="M270,608 C260,628 256,648 262,668 C268,650 274,634 282,618 Z"/>
+              <path class="ribbon-tail-r" d="M330,608 C340,628 344,648 338,668 C332,650 326,634 318,618 Z"/>
+              <path class="ribbon-path" d="M255,600 Q300,635 345,600"/>
+              <g class="ribbon-bow">
+                <path class="ribbon-loop-l" d="M296,606 C270,594 250,596 242,610 C236,622 246,634 264,630 C280,626 292,616 296,606 Z"/>
+                <path class="ribbon-loop-r" d="M304,606 C330,594 350,596 358,610 C364,622 354,634 336,630 C320,626 308,616 304,606 Z"/>
+                <circle class="ribbon-knot" cx="300" cy="606" r="8"/>
+              </g>
+            </g>
+
+            <!-- Lily 1 -->
+            <g class="lily lily1" transform="translate(258,330) rotate(-6)">
+              <g class="petals">
+                <g transform="rotate(0)"><path class="petal petal-outer" style="animation-delay:2.0s" d="M0,0 C5,-7 8,-14 6,-21 C12,-25 15,-32 11,-38 C16,-42 19,-49 13,-54 C17,-59 18,-65 11,-70 C6,-75 3,-79 0,-86 C-3,-79 -6,-75 -11,-70 C-18,-65 -17,-59 -13,-54 C-19,-49 -16,-42 -11,-38 C-15,-32 -12,-25 -6,-21 C-8,-14 -5,-7 0,0 Z"/><path class="petal-vein" style="animation-delay:2.0s" d="M0,-6 C0,-28 0,-55 0,-80"/></g>
+                <g transform="rotate(120)"><path class="petal petal-outer" style="animation-delay:2.16s" d="M0,0 C5,-7 8,-14 6,-21 C12,-25 15,-32 11,-38 C16,-42 19,-49 13,-54 C17,-59 18,-65 11,-70 C6,-75 3,-79 0,-86 C-3,-79 -6,-75 -11,-70 C-18,-65 -17,-59 -13,-54 C-19,-49 -16,-42 -11,-38 C-15,-32 -12,-25 -6,-21 C-8,-14 -5,-7 0,0 Z"/><path class="petal-vein" style="animation-delay:2.16s" d="M0,-6 C0,-28 0,-55 0,-80"/></g>
+                <g transform="rotate(240)"><path class="petal petal-outer" style="animation-delay:2.32s" d="M0,0 C5,-7 8,-14 6,-21 C12,-25 15,-32 11,-38 C16,-42 19,-49 13,-54 C17,-59 18,-65 11,-70 C6,-75 3,-79 0,-86 C-3,-79 -6,-75 -11,-70 C-18,-65 -17,-59 -13,-54 C-19,-49 -16,-42 -11,-38 C-15,-32 -12,-25 -6,-21 C-8,-14 -5,-7 0,0 Z"/><path class="petal-vein" style="animation-delay:2.32s" d="M0,-6 C0,-28 0,-55 0,-80"/></g>
+                <g transform="rotate(60)"><path class="petal petal-inner" style="animation-delay:2.08s" d="M0,0 C4,-6 7,-13 5,-18 C10,-22 13,-28 10,-33 C14,-37 15,-42 11,-47 C14,-51 15,-57 9,-60 C5,-65 2,-68 0,-72 C-2,-68 -5,-65 -9,-60 C-15,-57 -14,-51 -11,-47 C-15,-42 -14,-37 -10,-33 C-13,-28 -10,-22 -5,-18 C-7,-13 -4,-6 0,0 Z"/><path class="petal-vein" style="animation-delay:2.08s" d="M0,-5 C0,-22 0,-44 0,-66"/><ellipse class="petal-speckle" style="animation-delay:2.7s" cx="-2" cy="-14" rx="1.3" ry="1"/><ellipse class="petal-speckle" style="animation-delay:2.74s" cx="2" cy="-18" rx="1.1" ry="0.9"/><ellipse class="petal-speckle" style="animation-delay:2.78s" cx="-1" cy="-22" rx="1" ry="0.8"/></g>
+                <g transform="rotate(180)"><path class="petal petal-inner" style="animation-delay:2.24s" d="M0,0 C4,-6 7,-13 5,-18 C10,-22 13,-28 10,-33 C14,-37 15,-42 11,-47 C14,-51 15,-57 9,-60 C5,-65 2,-68 0,-72 C-2,-68 -5,-65 -9,-60 C-15,-57 -14,-51 -11,-47 C-15,-42 -14,-37 -10,-33 C-13,-28 -10,-22 -5,-18 C-7,-13 -4,-6 0,0 Z"/><path class="petal-vein" style="animation-delay:2.24s" d="M0,-5 C0,-22 0,-44 0,-66"/><ellipse class="petal-speckle" style="animation-delay:2.86s" cx="-2" cy="-14" rx="1.3" ry="1"/><ellipse class="petal-speckle" style="animation-delay:2.9s" cx="2" cy="-18" rx="1.1" ry="0.9"/><ellipse class="petal-speckle" style="animation-delay:2.94s" cx="-1" cy="-22" rx="1" ry="0.8"/></g>
+                <g transform="rotate(300)"><path class="petal petal-inner" style="animation-delay:2.4s" d="M0,0 C4,-6 7,-13 5,-18 C10,-22 13,-28 10,-33 C14,-37 15,-42 11,-47 C14,-51 15,-57 9,-60 C5,-65 2,-68 0,-72 C-2,-68 -5,-65 -9,-60 C-15,-57 -14,-51 -11,-47 C-15,-42 -14,-37 -10,-33 C-13,-28 -10,-22 -5,-18 C-7,-13 -4,-6 0,0 Z"/><path class="petal-vein" style="animation-delay:2.4s" d="M0,-5 C0,-22 0,-44 0,-66"/><ellipse class="petal-speckle" style="animation-delay:3.02s" cx="-2" cy="-14" rx="1.3" ry="1"/><ellipse class="petal-speckle" style="animation-delay:3.06s" cx="2" cy="-18" rx="1.1" ry="0.9"/><ellipse class="petal-speckle" style="animation-delay:3.1s" cx="-1" cy="-22" rx="1" ry="0.8"/></g>
+              </g>
+              <g class="reproductive">
+                <path class="pistil-style" style="animation-delay:3.0s" d="M0,-4 C-1,-15 1,-25 3,-34"/>
+                <ellipse class="pistil-stigma" style="animation-delay:3.05s" cx="3" cy="-35" rx="2.8" ry="1.6" transform="rotate(15 3 -35)"/>
+                <path class="stamen-filament" style="animation-delay:3.1s" d="M0,-4 C-6,-11 -10,-17 -9,-25"/>
+                <ellipse class="stamen-anther" style="animation-delay:3.1s" cx="-9" cy="-26" rx="2.9" ry="1.5" transform="rotate(-35 -9 -26)"/>
+                <path class="stamen-filament" style="animation-delay:3.15s" d="M0,-4 C6,-11 11,-16 11,-24"/>
+                <ellipse class="stamen-anther" style="animation-delay:3.15s" cx="11" cy="-25" rx="2.9" ry="1.5" transform="rotate(35 11 -25)"/>
+                <path class="stamen-filament" style="animation-delay:3.2s" d="M0,-4 C1,-12 3,-19 5,-27"/>
+                <ellipse class="stamen-anther" style="animation-delay:3.2s" cx="5" cy="-28" rx="2.9" ry="1.5" transform="rotate(10 5 -28)"/>
+              </g>
+            </g>
+
+            <!-- Lily 2 -->
+            <g class="lily lily2" transform="translate(300,308) rotate(3)">
+              <g class="petals">
+                <g transform="rotate(0)"><path class="petal petal-outer" style="animation-delay:2.15s" d="M0,0 C6,-9 10,-17 7,-26 C14,-30 18,-38 14,-46 C19,-51 22,-59 16,-65 C20,-71 21,-79 13,-84 C8,-90 3,-95 0,-100 C-3,-95 -8,-90 -13,-84 C-21,-79 -20,-71 -16,-65 C-22,-59 -19,-51 -14,-46 C-18,-38 -14,-30 -7,-26 C-10,-17 -6,-9 0,0 Z"/><path class="petal-vein" style="animation-delay:2.15s" d="M0,-6 C0,-32 0,-64 0,-94"/></g>
+                <g transform="rotate(120)"><path class="petal petal-outer" style="animation-delay:2.31s" d="M0,0 C6,-9 10,-17 7,-26 C14,-30 18,-38 14,-46 C19,-51 22,-59 16,-65 C20,-71 21,-79 13,-84 C8,-90 3,-95 0,-100 C-3,-95 -8,-90 -13,-84 C-21,-79 -20,-71 -16,-65 C-22,-59 -19,-51 -14,-46 C-18,-38 -14,-30 -7,-26 C-10,-17 -6,-9 0,0 Z"/><path class="petal-vein" style="animation-delay:2.31s" d="M0,-6 C0,-32 0,-64 0,-94"/></g>
+                <g transform="rotate(240)"><path class="petal petal-outer" style="animation-delay:2.47s" d="M0,0 C6,-9 10,-17 7,-26 C14,-30 18,-38 14,-46 C19,-51 22,-59 16,-65 C20,-71 21,-79 13,-84 C8,-90 3,-95 0,-100 C-3,-95 -8,-90 -13,-84 C-21,-79 -20,-71 -16,-65 C-22,-59 -19,-51 -14,-46 C-18,-38 -14,-30 -7,-26 C-10,-17 -6,-9 0,0 Z"/><path class="petal-vein" style="animation-delay:2.47s" d="M0,-6 C0,-32 0,-64 0,-94"/></g>
+                <g transform="rotate(60)"><path class="petal petal-inner" style="animation-delay:2.23s" d="M0,0 C5,-8 9,-15 6,-22 C12,-26 15,-33 12,-39 C16,-43 18,-50 13,-55 C17,-60 18,-67 11,-71 C7,-76 2,-80 0,-84 C-2,-80 -7,-76 -11,-71 C-18,-67 -17,-60 -13,-55 C-18,-50 -16,-43 -12,-39 C-15,-33 -12,-26 -6,-22 C-9,-15 -5,-8 0,0 Z"/><path class="petal-vein" style="animation-delay:2.23s" d="M0,-5 C0,-27 0,-54 0,-78"/><ellipse class="petal-speckle" style="animation-delay:2.9s" cx="-2" cy="-15" rx="1.4" ry="1.1"/><ellipse class="petal-speckle" style="animation-delay:2.94s" cx="2" cy="-20" rx="1.2" ry="1"/><ellipse class="petal-speckle" style="animation-delay:2.98s" cx="-1" cy="-24" rx="1.1" ry="0.9"/></g>
+                <g transform="rotate(180)"><path class="petal petal-inner" style="animation-delay:2.39s" d="M0,0 C5,-8 9,-15 6,-22 C12,-26 15,-33 12,-39 C16,-43 18,-50 13,-55 C17,-60 18,-67 11,-71 C7,-76 2,-80 0,-84 C-2,-80 -7,-76 -11,-71 C-18,-67 -17,-60 -13,-55 C-18,-50 -16,-43 -12,-39 C-15,-33 -12,-26 -6,-22 C-9,-15 -5,-8 0,0 Z"/><path class="petal-vein" style="animation-delay:2.39s" d="M0,-5 C0,-27 0,-54 0,-78"/><ellipse class="petal-speckle" style="animation-delay:3.06s" cx="-2" cy="-15" rx="1.4" ry="1.1"/><ellipse class="petal-speckle" style="animation-delay:3.1s" cx="2" cy="-20" rx="1.2" ry="1"/><ellipse class="petal-speckle" style="animation-delay:3.14s" cx="-1" cy="-24" rx="1.1" ry="0.9"/></g>
+                <g transform="rotate(300)"><path class="petal petal-inner" style="animation-delay:2.55s" d="M0,0 C5,-8 9,-15 6,-22 C12,-26 15,-33 12,-39 C16,-43 18,-50 13,-55 C17,-60 18,-67 11,-71 C7,-76 2,-80 0,-84 C-2,-80 -7,-76 -11,-71 C-18,-67 -17,-60 -13,-55 C-18,-50 -16,-43 -12,-39 C-15,-33 -12,-26 -6,-22 C-9,-15 -5,-8 0,0 Z"/><path class="petal-vein" style="animation-delay:2.55s" d="M0,-5 C0,-27 0,-54 0,-78"/><ellipse class="petal-speckle" style="animation-delay:3.22s" cx="-2" cy="-15" rx="1.4" ry="1.1"/><ellipse class="petal-speckle" style="animation-delay:3.26s" cx="2" cy="-20" rx="1.2" ry="1"/><ellipse class="petal-speckle" style="animation-delay:3.3s" cx="-1" cy="-24" rx="1.1" ry="0.9"/></g>
+              </g>
+              <g class="reproductive">
+                <path class="pistil-style" style="animation-delay:3.3s" d="M0,-4 C-1,-17 1,-29 3,-40"/>
+                <ellipse class="pistil-stigma" style="animation-delay:3.35s" cx="3" cy="-41" rx="3.2" ry="1.8" transform="rotate(15 3 -41)"/>
+                <path class="stamen-filament" style="animation-delay:3.4s" d="M0,-4 C-7,-12 -11,-19 -10,-28"/>
+                <ellipse class="stamen-anther" style="animation-delay:3.4s" cx="-10" cy="-29" rx="3.2" ry="1.7" transform="rotate(-35 -10 -29)"/>
+                <path class="stamen-filament" style="animation-delay:3.45s" d="M0,-4 C7,-12 12,-18 12,-27"/>
+                <ellipse class="stamen-anther" style="animation-delay:3.45s" cx="12" cy="-28" rx="3.2" ry="1.7" transform="rotate(35 12 -28)"/>
+                <path class="stamen-filament" style="animation-delay:3.5s" d="M0,-4 C1,-13 3,-21 6,-30"/>
+                <ellipse class="stamen-anther" style="animation-delay:3.5s" cx="6" cy="-31" rx="3.2" ry="1.7" transform="rotate(10 6 -31)"/>
+              </g>
+            </g>
+
+            <!-- Lily 3 -->
+            <g class="lily lily3" transform="translate(342,330) rotate(7)">
+              <g class="petals">
+                <g transform="rotate(0)"><path class="petal petal-outer" style="animation-delay:2.3s" d="M0,0 C6,-8 9,-16 7,-24 C13,-28 17,-36 13,-43 C18,-48 21,-55 15,-61 C19,-67 20,-74 12,-79 C7,-85 3,-89 0,-94 C-3,-89 -7,-85 -12,-79 C-20,-74 -19,-67 -15,-61 C-21,-55 -18,-48 -13,-43 C-17,-36 -13,-28 -7,-24 C-9,-16 -6,-8 0,0 Z"/><path class="petal-vein" style="animation-delay:2.3s" d="M0,-6 C0,-30 0,-60 0,-88"/></g>
+                <g transform="rotate(120)"><path class="petal petal-outer" style="animation-delay:2.46s" d="M0,0 C6,-8 9,-16 7,-24 C13,-28 17,-36 13,-43 C18,-48 21,-55 15,-61 C19,-67 20,-74 12,-79 C7,-85 3,-89 0,-94 C-3,-89 -7,-85 -12,-79 C-20,-74 -19,-67 -15,-61 C-21,-55 -18,-48 -13,-43 C-17,-36 -13,-28 -7,-24 C-9,-16 -6,-8 0,0 Z"/><path class="petal-vein" style="animation-delay:2.46s" d="M0,-6 C0,-30 0,-60 0,-88"/></g>
+                <g transform="rotate(240)"><path class="petal petal-outer" style="animation-delay:2.62s" d="M0,0 C6,-8 9,-16 7,-24 C13,-28 17,-36 13,-43 C18,-48 21,-55 15,-61 C19,-67 20,-74 12,-79 C7,-85 3,-89 0,-94 C-3,-89 -7,-85 -12,-79 C-20,-74 -19,-67 -15,-61 C-21,-55 -18,-48 -13,-43 C-17,-36 -13,-28 -7,-24 C-9,-16 -6,-8 0,0 Z"/><path class="petal-vein" style="animation-delay:2.62s" d="M0,-6 C0,-30 0,-60 0,-88"/></g>
+                <g transform="rotate(60)"><path class="petal petal-inner" style="animation-delay:2.38s" d="M0,0 C5,-7 8,-14 6,-20 C11,-24 14,-30 11,-36 C15,-40 17,-46 12,-51 C16,-56 17,-62 10,-66 C6,-71 2,-74 0,-78 C-2,-74 -6,-71 -10,-66 C-17,-62 -16,-56 -12,-51 C-17,-46 -15,-40 -11,-36 C-14,-30 -11,-24 -6,-20 C-8,-14 -5,-7 0,0 Z"/><path class="petal-vein" style="animation-delay:2.38s" d="M0,-5 C0,-25 0,-50 0,-74"/><ellipse class="petal-speckle" style="animation-delay:3.0s" cx="-2" cy="-14" rx="1.3" ry="1"/><ellipse class="petal-speckle" style="animation-delay:3.04s" cx="2" cy="-18" rx="1.1" ry="0.9"/><ellipse class="petal-speckle" style="animation-delay:3.08s" cx="-1" cy="-22" rx="1" ry="0.8"/></g>
+                <g transform="rotate(180)"><path class="petal petal-inner" style="animation-delay:2.54s" d="M0,0 C5,-7 8,-14 6,-20 C11,-24 14,-30 11,-36 C15,-40 17,-46 12,-51 C16,-56 17,-62 10,-66 C6,-71 2,-74 0,-78 C-2,-74 -6,-71 -10,-66 C-17,-62 -16,-56 -12,-51 C-17,-46 -15,-40 -11,-36 C-14,-30 -11,-24 -6,-20 C-8,-14 -5,-7 0,0 Z"/><path class="petal-vein" style="animation-delay:2.54s" d="M0,-5 C0,-25 0,-50 0,-74"/><ellipse class="petal-speckle" style="animation-delay:3.16s" cx="-2" cy="-14" rx="1.3" ry="1"/><ellipse class="petal-speckle" style="animation-delay:3.2s" cx="2" cy="-18" rx="1.1" ry="0.9"/><ellipse class="petal-speckle" style="animation-delay:3.24s" cx="-1" cy="-22" rx="1" ry="0.8"/></g>
+                <g transform="rotate(300)"><path class="petal petal-inner" style="animation-delay:2.7s" d="M0,0 C5,-7 8,-14 6,-20 C11,-24 14,-30 11,-36 C15,-40 17,-46 12,-51 C16,-56 17,-62 10,-66 C6,-71 2,-74 0,-78 C-2,-74 -6,-71 -10,-66 C-17,-62 -16,-56 -12,-51 C-17,-46 -15,-40 -11,-36 C-14,-30 -11,-24 -6,-20 C-8,-14 -5,-7 0,0 Z"/><path class="petal-vein" style="animation-delay:2.7s" d="M0,-5 C0,-25 0,-50 0,-74"/><ellipse class="petal-speckle" style="animation-delay:3.32s" cx="-2" cy="-14" rx="1.3" ry="1"/><ellipse class="petal-speckle" style="animation-delay:3.36s" cx="2" cy="-18" rx="1.1" ry="0.9"/><ellipse class="petal-speckle" style="animation-delay:3.4s" cx="-1" cy="-22" rx="1" ry="0.8"/></g>
+              </g>
+              <g class="reproductive">
+                <path class="pistil-style" style="animation-delay:3.4s" d="M0,-4 C-1,-15 1,-26 3,-35"/>
+                <ellipse class="pistil-stigma" style="animation-delay:3.45s" cx="3" cy="-36" rx="2.9" ry="1.6" transform="rotate(15 3 -36)"/>
+                <path class="stamen-filament" style="animation-delay:3.5s" d="M0,-4 C-6,-11 -10,-17 -9,-26"/>
+                <ellipse class="stamen-anther" style="animation-delay:3.5s" cx="-9" cy="-27" rx="3" ry="1.5" transform="rotate(-35 -9 -27)"/>
+                <path class="stamen-filament" style="animation-delay:3.55s" d="M0,-4 C6,-11 11,-17 11,-25"/>
+                <ellipse class="stamen-anther" style="animation-delay:3.55s" cx="11" cy="-26" rx="3" ry="1.5" transform="rotate(35 11 -26)"/>
+                <path class="stamen-filament" style="animation-delay:3.6s" d="M0,-4 C1,-12 3,-20 5,-28"/>
+                <ellipse class="stamen-anther" style="animation-delay:3.6s" cx="5" cy="-29" rx="3" ry="1.5" transform="rotate(10 5 -29)"/>
+              </g>
+            </g>
+          </svg>
+        </div>
+      </div>
+
+      <!-- Frame Bottom Left -->
+      <div class="frame-slot bl">
+        <label class="photo-frame">
+          <input type="file" accept="image/*" class="photo-input">
+          <img src="assets/200.gif" alt="" class="uploaded-img">
+          <div class="frame-content">
+            <svg class="frame-icon" viewBox="0 0 24 24" fill="none" stroke="#C9962B" stroke-width="1.4"><rect x="3" y="6" width="18" height="13" rx="2"/><circle cx="12" cy="12.5" r="3.2"/><path d="M8 6l1.5-2h5L16 6"/></svg>
+            <div class="frame-label">Add a memory</div>
+          </div>
+          <div class="frame-sparkle" style="top:40%; left:50%;"></div>
+        </label>
+      </div>
+
+      <!-- Frame Bottom Right -->
+      <div class="frame-slot br">
+        <label class="photo-frame">
+          <input type="file" accept="image/*" class="photo-input">
+          <img src="assets/cute.gif" alt="" class="uploaded-img">
+          <div class="frame-content">
+            <svg class="frame-icon" viewBox="0 0 24 24" fill="none" stroke="#C9962B" stroke-width="1.4"><rect x="3" y="6" width="18" height="13" rx="2"/><circle cx="12" cy="12.5" r="3.2"/><path d="M8 6l1.5-2h5L16 6"/></svg>
+            <div class="frame-label">Add a memory</div>
+          </div>
+          <div class="frame-sparkle" style="top:25%; left:70%;"></div>
+        </label>
+      </div>
+    </div>
+
+    <div class="message-card" id="message-card">
+      <h2>For you</h2>
+      <p>Good luck tomorrow sa interview, love.</p>
+      <button class="bloom-again" id="bloom-again">Bloom again 🌼</button>
+    </div>
+  </main>
+
+  <div id="music-panel">
+    <span id="music-icon">🎵</span>
+    <button class="m-btn" id="play-btn" title="Play">▶</button>
+    <button class="m-btn" id="mute-btn" title="Mute">🔊</button>
+    <input type="range" id="vol-slider" min="0" max="100" value="25">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
