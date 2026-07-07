@@ -91,8 +91,6 @@ document.getElementById('bloom-again').addEventListener('click', function(){
   spawnFinalSparkles();
 });
 
-/* ===== Actual Audio & Image logic replacement ===== */
-
 // Image Handler Logic
 document.querySelectorAll('.photo-input').forEach(input => {
   input.addEventListener('change', function(e) {
@@ -121,11 +119,9 @@ document.querySelectorAll('.uploaded-img').forEach(img => {
     }
   }
 
-  // Check immediately if browser has cached or already downloaded it
   if (img.complete) {
     checkAndShowImage();
   } else {
-    // Wait for download to finish if slow
     img.addEventListener('load', checkAndShowImage);
   }
 });
@@ -136,7 +132,6 @@ const playBtn = document.getElementById('play-btn');
 const muteBtn = document.getElementById('mute-btn');
 const volSlider = document.getElementById('vol-slider');
 
-// Set initial volume match
 audio.volume = volSlider.value / 100;
 
 playBtn.addEventListener('click', function(){
